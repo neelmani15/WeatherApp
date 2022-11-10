@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uf4k7wkwnvrad1%hyq98ypt3p90hrallg2(k#$+kx-(@^_@^h0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -118,7 +119,7 @@ USE_TZ = True
 
 import os
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'statcfiles')
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
 
 STATICFILES_DIR={
     os.path.join(BASE_DIR,'public/static')
@@ -130,3 +131,6 @@ MEDIA_URL='/media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Activate Django-Heroku
+django_heroku.settings(locals())
