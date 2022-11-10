@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href='/media/css/index.css?{% now "U" %}'/>
+</head>
+<body>
+    <div class="body">
+    <div class="heading"> 
+        <h1>Weather Report </h1>   
+    </div>  
+  
+    <div class="main-div">
+        <form method="post" class="form-div">  
+            {% csrf_token %}  
+            <div class=" input-group">
+                <input type="text" name="city" placeholder="Enter name of City">  
+                <button type="submit">Search</button>  
+            </div>  
+        </form>
+        <div class="fun-div">  
+            {% if code and heading and temp and pressure and humidity and windspeed and description %}
+            <div class="fun-div1"> 
+                <p class="text1">City: {{city}}</p>
+                <p class="text1">Country Code: {{code}}</p>
+                <p class="text1">Heading: {{heading}}</p>
+                <p class="text1">Temperature: {{temp}} F</p>
+                <p class="text1">Date: {{date}}</p>
+                <p class="text1">Time: {{time}}</p>
+            </div>
+            <div class="fun-div4">
+                <div class="fun-div2">
+                    <p class="text">Pressure: {{pressure}}</p>
+                    <p class="text">Humidity: {{humidity}}</p>
+                    <p class="text">Wind Speed: {{windspeed}}</p>
+                </div>
+                <div class="fun-div3">
+                    <p class="text2">Description: {{description}}</p>
+                    <img src="http://openweathermap.org/img/w/{{icon}}.png" class="img1"/>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+</body>
+</html>

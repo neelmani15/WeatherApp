@@ -1,0 +1,123 @@
+body{
+    margin:0%;
+    padding: 0%;
+}
+.body{
+    background-image: -webkit-linear-gradient(270deg,#83EAF1,#63A4FF);
+    
+    margin:0%;
+    padding: 1rem;
+    height: 100vh;
+    
+}
+.heading{
+    text-align: center;
+    
+    background-color: rgba(254, 0, 216, 0.386);
+    /* background-image: -webkit-linear-gradient(270deg,rgb(244, 251, 252),rgb(152, 155, 155),rgb(131, 129, 129)); */
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    height: 2rem;
+    text-shadow: rgb(73, 64, 64) 1px 0.5px;
+    margin:0px 0px 0px 0px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.279);
+    
+}
+.heading h1{
+    margin:0%;
+    padding: 0%;
+}
+.main-div{
+    margin-top: 50px;
+    margin-left: 300px;
+    height: 450px;
+    width: 800px;
+    /* background-color: rgb(240, 200, 200); */
+    background-image: -webkit-linear-gradient(270deg,rgb(240, 200, 200),rgb(240, 155, 155),rgb(240, 135, 149));
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    margin-bottom:2rem ;
+    box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.279);
+}
+.form-div{
+    background-color: rgb(165, 0, 0);
+    border-radius: 7px;
+}
+.input-group{
+    margin-left: 80px;
+}
+.form-div input{
+    font-size: 30px;
+    width: 550px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+}
+.form-div button{
+    font-size: 22px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.form-div button:hover{
+    background-color: rgba(240, 214, 149, 0.941);
+    color: rgb(252, 251, 251);
+    font-size: 25px;
+}
+.fun-div{
+    display: flex;
+}
+.fun-div1{
+    width: 45%;
+    height: 60%;
+    /* background-color: rgba(249, 109, 109, 0.658); */
+    background-image: -webkit-linear-gradient(90deg,rgb(211, 246, 252),rgb(161, 250, 253),rgb(124, 226, 252));
+    box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.279);
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+.fun-div1 .text1{
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fun-div2{
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+    width: 300px;
+    /* background-color:rgba(249, 109, 109, 0.658); */
+    background-image: -webkit-linear-gradient(90deg,rgb(211, 246, 252),rgb(161, 250, 253),rgb(124, 226, 252));
+    box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.279);
+}
+.fun-div2 .text{
+    font-size: 22px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.fun-div3{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    /* background-color: rgba(249, 109, 109, 0.658); */
+    background-image: -webkit-linear-gradient(90deg,rgb(211, 246, 252),rgb(161, 250, 253),rgb(124, 226, 252));
+    box-shadow: 5px 5px 5px rgba(11, 11, 11, 0.279);
+}
+.fun-div3 .text2{
+    font-size: 22px;
+    margin-left: 15px;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+.fun-div3 .img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}

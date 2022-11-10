@@ -1,0 +1,5 @@
+django-admin startproject weather
+python manage.py runserver
+django-admin startapp app
+To kill the port type "npx kill-port 8000"
+To load the css press ctrl+f5 or type link in index.html as "<link rel="stylesheet" href='/media/css/index.css?{% now "U" %}'/>"
